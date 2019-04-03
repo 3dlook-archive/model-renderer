@@ -1,0 +1,24 @@
+{
+  "extends": "airbnb-base",
+  "globals": {
+    "window": true,
+    "API_HOST": true
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ]
+  }
+}
