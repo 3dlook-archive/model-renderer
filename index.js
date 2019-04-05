@@ -45,7 +45,7 @@ class ModelRenderer {
     this.scene = new THREE.Scene();
 
     this.renderer = new THREE.WebGLRenderer();
-    this.renderer.setClearColor(new THREE.Color(0x00FFFF));
+    this.renderer.setClearColor(new THREE.Color(0xFFFFFF));
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.renderer.setSize(this.container.offsetWidth, this.container.offsetHeight);
     this.renderer.shadowMap.enabled = true;
