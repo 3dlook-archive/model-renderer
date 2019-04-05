@@ -1,6 +1,6 @@
 {
   "name": "@3dlook/model-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "3D model renderer library based on three.js",
   "main": "index.js",
   "scripts": {
