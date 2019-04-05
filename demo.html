@@ -7,6 +7,24 @@
   <title>Demo</title>
 </head>
 <body>
+  <h3>Enter model url here:</h3>
+  <input type="url" name="model-url" id="model-url">
+  <button id="model-load">Load</button>
+  <br>
+  <br>
+  <div id="canvas-container" style="width: 1280px; height: 720px;"></div>
+  <script src="/model-renderer.js"></script>
+  <script>
+    var m = new ModelRenderer({
+      container: '#canvas-container',
+    });
+    m.init();
 
+    document.getElementById('model-load').addEventListener('click', () => {
+      m.loadModel(document.getElementById('model-url').value)
+      .then(r => m.displayModel(r))
+      .catch(err => alert(err.message));
+    });
+  </script>
 </body>
 </html>
