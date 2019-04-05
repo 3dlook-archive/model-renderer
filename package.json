@@ -1,5 +1,5 @@
 {
-  "name": "model-renderer",
+  "name": "@3dlook/model-renderer",
   "version": "1.0.0",
   "description": "3D model renderer library based on three.js",
   "main": "index.js",
