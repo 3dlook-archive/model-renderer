@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import 'three/examples/js/controls/OrbitControls';
-import 'three/examples/js/loaders/OBJLoader';
+import './lib/OrbitControls';
+import './lib/OBJLoader';
 
 /**
  * ModelRenderer class
