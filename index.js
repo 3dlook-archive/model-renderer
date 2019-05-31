@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import './lib/OrbitControls';
-import './lib/OBJLoader';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 
 /**
  * ModelRenderer class
@@ -52,7 +52,7 @@ class ModelRenderer {
 
     this.container.appendChild(this.renderer.domElement);
 
-    this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+    this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
     this.controls.dampingFactor = 0.25;
     this.controls.enableZoom = true;
@@ -112,7 +112,7 @@ class ModelRenderer {
         return reject(new Error('No model url is specified'));
       }
 
-      return new THREE.OBJLoader()
+      return new OBJLoader()
         .load(url, object => resolve(object), null, err => reject(err));
     });
   }
